@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --background: #F394D3;
+  --foreground: #2b188a;
+  --verde: #0B9391;
+  --amarelo: #FFD83C;
+  --azul: #82A1FF;
+  --vermelho: #F51010;
+  --branco: #ffff;
+  --transparente: #ededed78;
+  --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+.cards_livro{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card_livro{
+  background-color: var(--azul);
+  height: 15rem;
+  width: 10rem;
+}

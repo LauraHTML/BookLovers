@@ -1,0 +1,211 @@
+
+.footer_content{
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.divLivros{
+  display: flex;
+  flex-direction: row;
+  margin-left: 30;
+}
+
+.div_pagina_assinatura{
+  font-family: var(--font-bricolage-grotesk);
+  font-size: 1.5rem;
+  padding: 2rem;
+  height: 50vh;
+  width: 5vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  background-color: var(--accent-primary-700);
+  border-radius: 0.5rem;
+  font-style: italic;
+}
+
+.div_pagina_papelaria{
+  font-family: var(--font-instrument-serif);
+  font-size: 2rem;
+  padding: 2rem;
+  height: 50vh;
+  width: 10vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  transform: rotate(-5deg);
+  border-radius: 0.2rem;
+
+  background-image: url(/listra.png);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.div_pagina_leitura{
+  padding: 2rem;
+  height: 50vh;
+  width: 7vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  background-color: var(--brand-secundary-700);
+  transform: rotate(5deg);
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  font-family: var(--font-bricolage-grotesk);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.div_pagina_recomendacoes{
+  font-family: var(--font-bricolage-grotesk);
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 2rem;
+  height: 50vh;
+  width: 10vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  background-image: url(/quadriculado.png);
+  background-size: cover;
+  background-repeat: repeat;
+  transform: rotate(-5deg);
+  border-radius: 0.5rem;
+  font-style: italic;
+}
+
+.div_pagina_sobre{
+  padding: 2rem;
+  height: 50vh;
+  width: 4vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  background-color: var(--accent-secundary-700);
+  transform: rotate(5deg);
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+
+  font-family: var(--font-bricolage-grotesk);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.div_pagina_contato{
+  padding: 2rem;
+  height: 50vh;
+  width: 6vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  background-color: var(--brand-primary-700);
+  transform: rotate(-5deg);
+  border-radius: 0.5rem;
+  font-style: italic;
+  font-family: var(--font-instrument-serif);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.div_pagina_contato p, .div_pagina_sobre p, .div_pagina_assinatura p, .div_pagina_recomendacoes p, .div_pagina_papelaria p, .div_pagina_leitura p{
+  transform: rotate(-90deg);
+  margin-top: 20vh;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.comece_hoje{
+  background-color: var(--brand-primary-700);
+  width: 17vw;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.borda_comece_hoje{
+  border-radius: 0.5rem;
+  border: solid 3px var(--branco);
+  height: 100%;
+  padding: 1rem;
+  font-family: var(--font-bricolage-grotesk);
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.borda_comece_hoje span{
+  font-family: var(--font-instrument-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.button_cadastro{
+  background-color: var(--accent-primary-700);
+  padding: var(--p-1);
+  border-radius: var(--l);
+}
+
+@media (max-width: 800px){
+  .footer_content{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+  .comece_hoje{
+  width: 60vw;
+  height: 45vh;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+  .divLivros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.div_pagina_contato ,.div_pagina_leitura , .div_pagina_sobre, .div_pagina_assinatura, .div_pagina_papelaria, .div_pagina_recomendacoes{
+  transform: rotate(0deg);
+  height: 6vh;
+  width: 80vw;
+}
+.div_pagina_contato p,.div_pagina_leitura p, .div_pagina_sobre p, .div_pagina_assinatura p, .div_pagina_papelaria p, .div_pagina_recomendacoes p{
+  transform: rotate(0deg);
+  margin: 0;
+}
+
+.div_pagina_papelaria{
+    background-image: url(/listra.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+}

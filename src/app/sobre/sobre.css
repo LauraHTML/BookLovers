@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --background: #F394D3;
+  --foreground: #2b188a;
+  --verde: #0B9391;
+  --amarelo: #FFD83C;
+  --azul: #82A1FF;
+  --vermelho: #F51010;
+  --branco: #ffff;
+  --transparente: #ededed78;
+  --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.italico{
+    font-family: "Instrument Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--branco);
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0rem 1rem;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: var(--transparente);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.pri-box{
+    height: 10rem;
+    width: 10rem;
+    border-top-left-radius: 10rem;
+}
+.pri-box img{
+    border-top-left-radius: 10rem;
+}
+
+.seg-box{
+    height: 10rem;
+    width: 15rem;
+    border-radius: 20rem;
+}
+.seg-box img{
+    border-radius: 20rem;
+}
+
+.ter-box{
+    height: 10rem;
+    width: 10rem;
+}
+
+.qua-box{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50rem;
+}
+.qua-box img{
+    border-radius: 50rem;
+}
+
+.qui-box{
+    height: 10rem;
+    width: 10rem;
+}
+
+.hex-box{
+    height: 10rem;
+    width: 10rem;
+    border-top-right-radius: 10rem;
+}
+.hex-box img{
+    border-top-right-radius: 10rem;
+}
+
+
+.box-img-top{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.objetivos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 5rem 0rem;
+    flex-wrap: wrap;
+}
+
+.objetivos_content{
+    background-image: url(/objFundo-1.svg);
+    background-size: 15rem;
+    background-repeat: no-repeat;
+}
+
+.objetivo{
+    height: 15rem;
+    width: 15rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.objetivo img{
+    padding: 0.3rem;
+}
+
+.vantagens{
+    display: flex;
+    justify-content: center;
+}
+
+.vantagens_content{
+    background-color: var(--amarelo);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+.vantagens_list{
+   width: 60%; 
+   line-height: 2rem;
+}
+
+.assinar{
+    width: 40%;
+    line-height: 2rem;
+}
+.assinar b{
+    font-size: 2rem;
+}
+
+.btn_assinar{
+    border: none;
+    padding: 0.4rem;
+    border-radius: 2.5rem;
+    width: 21.8rem;
+    color: var(--background);
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.5s;
+    border: solid var(--branco) 0.1rem;
+    background-color: var(--branco);
+  }
+  
+  .btn_assinar:hover{
+    background-color: var(--verde);
+    color: var(--branco);
+  }
