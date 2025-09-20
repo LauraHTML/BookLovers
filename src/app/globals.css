@@ -10,6 +10,7 @@
   --brand-primary-700: #82A1FF;
   --brand-primary-600: #8CA9FF;
   --brand-primary-500: #A6BCFF;
+  --brand-primary-400: #D9E3FF;
 
   --brand-secundary-700: #0B9391;
   --brand-secundary-600: #159F9D;
@@ -165,9 +166,9 @@
 
 /* tipografia */
 :root{
-  --headline-font: var(--font-bricolage-grotesk);
-  --accent-headline-font: var(--font-instrument-serif);
-  --body: var(--font-host-grotesk);
+  --font-primary: var(--font-bricolage-grotesk);
+  --font-accent-headline-font: var(--font-instrument-serif);
+  --font-body: var(--font-host-grotesk);
 }
 
 /* font-size */
@@ -208,6 +209,28 @@
 }
 
 @theme inline {
+
+  --branco: #fff;
+
+  --primary: #82A1FF;
+  --color-brand-primary-700: #82A1FF;
+  --color-brand-primary-600: #8CA9FF;
+  --color-brand-primary-500: #A6BCFF;
+  --color-brand-primary-400: #D9E3FF;
+
+  --secondary: #0B9391;
+  --color-brand-secundary-700: #0B9391;
+  --color-brand-secundary-600: #159F9D;
+  --color-brand-secundary-500: #13AFAD;
+
+  --color-accent-primary-700: #FFD83C;
+  --color-accent-primary-600: #FFDE5C;
+  --color-accent-primary-500: #FFE476;
+
+  --color-accent-secundary-700: #F51010;
+  --color-accent-secundary-600: #FF3E3E;
+  --color-accent-secundary-500: #FF6464;
+
   --color-background: var(--background);
   --color-foreground: var(--color-foreground);
   --font-sans: var(--font-geist-sans);
@@ -245,6 +268,15 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --spancing-5: min(5em, 8%);
+}
+
+/* fonte */
+
+h1{
+  font-family: var(--font-bricolage-grotesk);
+  font-weight: 500;
 }
 
 a {

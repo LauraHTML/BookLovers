@@ -1,0 +1,33 @@
+.bannerBoasVindas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    height: 80vh;
+}
+
+.bannerBoasMarcador{
+    background-color: var(--brand-primary-400);
+    border: solid 3px var(--brand-primary-700);
+    color: var(--brand-primary-700);
+    border-radius: var(--l);
+    padding: var(--p-1);
+    font-family: var(--font-host-grotesk);
+}
+
+.bannerBoasVindash1{
+    font-size: var(--headline-1);
+    text-align: center;
+}
+
+.bannerBoasVindash5{
+    font-size: var(--headline-5);
+    font-family: var(--font-host-grotesk);
+    text-align: center;
+}
+
+.bannerBoasVindasSpan{
+    font-family: var(--font-instrument-serif);
+    font-style: italic;
+}

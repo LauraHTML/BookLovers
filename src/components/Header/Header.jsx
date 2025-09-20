@@ -34,13 +34,13 @@ export default function Header() {
           </div>
           <div className={styles.navUl}>
             <ul>
-              <Button className={styles.navButton}>
+              <Button variant="ghost" className={styles.navButton}>
                 <p className={styles.navUlp}>Recursos</p>
               </Button>
-              <Button className={styles.navButton}>
+              <Button variant="ghost" className={styles.navButton}>
                 <p className={styles.navUlp}>Blog</p>
               </Button>
-              <Button className={styles.navButton}>
+              <Button variant="ghost" className={styles.navButton}>
                 <p className={styles.navUlp}>Sobre Nós</p>
               </Button>
             </ul>

@@ -5,12 +5,15 @@
 .navBar {
   font-family: var(--font-bricolage-grotesk);
   height: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: var(--p-2);
   border-radius: var(--xs);
+  position: fixed;
+  z-index: 1000;
 }
 
 .navUl ul {
