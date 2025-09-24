@@ -27,8 +27,8 @@
   --radius: 0.625rem;
   --background: #F7EFE4;
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card: #FFFBF6;
+  --card-foreground: #222222;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #AD9DF6;
@@ -61,8 +61,8 @@
 .dark {
   --background: #222222;
   --foreground: #F2F2F2;
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  --color-card: #514A4A;
+  --color-card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: #7E6BD8;
@@ -133,11 +133,11 @@
 
 /* margin e padding */
 :root{
-  --p-5: 5vh;
-  --p-4: 4vh;
-  --p-3: 3vh;
-  --p-2: 2vh;
-  --p-1: 1vh;
+  --p-5: min(5rem,25%);
+  --p-4: min(4rem,20%);
+  --p-3: min(3rem,15%);
+  --p-2: min(2rem,10%);
+  --p-1: min(1rem,5%);
 
   --m-5: 5vh;
   --m-4: 4vh;
@@ -212,13 +212,11 @@
 
   --branco: #fff;
 
-  --primary: #82A1FF;
   --color-brand-primary-700: #82A1FF;
   --color-brand-primary-600: #8CA9FF;
   --color-brand-primary-500: #A6BCFF;
   --color-brand-primary-400: #D9E3FF;
 
-  --secondary: #0B9391;
   --color-brand-secundary-700: #0B9391;
   --color-brand-secundary-600: #159F9D;
   --color-brand-secundary-500: #13AFAD;
@@ -276,6 +274,11 @@
 
 h1{
   font-family: var(--font-bricolage-grotesk);
+  font-weight: 500;
+}
+
+h3{
+  font-family: var(--font-instrument-serif);
   font-weight: 500;
 }
 

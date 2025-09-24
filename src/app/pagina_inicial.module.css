@@ -1,4 +1,4 @@
-.bannerBoasVindas{
+.bannerContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,18 +16,34 @@
     font-family: var(--font-host-grotesk);
 }
 
-.bannerBoasVindash1{
+.bannerFrase{
+    width: 50vw;
+}
+
+.destaqueBannerFrase{
+    background-color: var(--color-accent-primary-600);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.bannerContenth1{
     font-size: var(--headline-1);
     text-align: center;
 }
 
-.bannerBoasVindash5{
-    font-size: var(--headline-5);
-    font-family: var(--font-host-grotesk);
+.bannerContenth2{
+    font-size: var(--headline-2);
     text-align: center;
 }
 
-.bannerBoasVindasSpan{
+.bannerContenth5{
+    font-size: var(--headline-5);
+    text-align: center;
+}
+
+.bannerContentSpan{
     font-family: var(--font-instrument-serif);
     font-style: italic;
 }
+
+/* vantagens - inicio */

@@ -1,5 +1,6 @@
 .headerBar {
   padding: 0 var(--p-2) 0 var(--p-2);
+  background-color: var(--background);
 }
 
 .navBar {
