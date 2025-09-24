@@ -33,7 +33,7 @@ export default function Header() {
             <p>logo</p>
           </div>
           <div className={styles.navUl}>
-            <ul>
+            <ul className="w-full">
               <Button variant="ghost" className={styles.navButton}>
                 <p className={styles.navUlp}>Recursos</p>
               </Button>
@@ -50,7 +50,7 @@ export default function Header() {
           <div className={styles.navBarMobileContent}>
             <DropdownMenu >
               <DropdownMenuTrigger asChild>
-                <Button variant="outline">
+                <Button variant="ghost">
                   <Image
                     height={40}
                     width={40}
