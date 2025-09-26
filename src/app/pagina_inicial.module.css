@@ -16,25 +16,17 @@
     font-family: var(--font-host-grotesk);
     text-align: center;
 }
-
-.bannerFrase{
-    width: 50vw;
-}
-
-.destaqueBannerFrase{
-    background-color: var(--color-accent-primary-600);
-    font-style: italic;
-    font-weight: 600;
-}
-
 .bannerContenth1{
     text-align: center;
 }
 
-.bannerContenth2{
+.bannerContenth3{
+    display: flex;
+    flex-direction: column;
     font-size: var(--text-headline-2);
     text-align: center;
 }
+
 
 .bannerContenth5{
     font-size: var(--text-headline-5);
@@ -108,8 +100,51 @@
     padding: 1rem 0 1rem 0;
 }
 
-@media (max-width: 768px) {
+.bannerBlog{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    width: 50vw;
+}
 
+.bannerFraseContent{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    height: min-content;
+    justify-content: center;
+    width: 70%;
+}
+
+.frame{
+    flex: none;
+    height: auto;
+    position: relative;
+}
+.linhaTexto{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: 83px;
+    justify-content: center;
+    padding: 0;
+    width: 20rem;
+}
+
+@media (max-width: 768px) {
     .carouselItem{
     flex-direction: column;
     gap: 0;
@@ -117,6 +152,5 @@
   .carouselItemTexto{
     display: none;
 }
-
 
 }

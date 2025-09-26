@@ -181,16 +181,34 @@ export default function Home() {
           </div>
           <Button variant="secondary">Ir para blog</Button>
         </section>
-
-        <section className={styles.bannerFrase}>
-          <h3 className={styles.bannerContenth2}>
-            Organize sua estante <Image src="/pilhaLivros.png" width={90} height={20} alt="estante" />, acompanhe suas metas com precisão e pare de
-            perder tempo com livros que não são para você. Nossas recomendações inteligentes <Image src="/ia.png" width={40} height={20} alt="estante" /> e nossa curadoria de assinatura <Image src="/metas.png" width={90} height={20} alt="estante" /> garantem que sua
-            próxima leitura seja sempre incrível.
-          </h3>
+        
+        <section className={styles.bannerContent}>
+          <div className={styles.bannerBoasMarcador}>
+            <p>Para os apaixonados por leitura</p>
+          </div>
+            <h1 className={styles.bannerContenth1}>
+              Assinatura BookLovers
+            </h1>
+            <div>
+              <h2>Comece escolhendo sua assinatura</h2>
+            </div>
         </section>
-        <section>
-          <h1>Seção para mostrar como o processo de recebimento dos livros</h1>
+
+        <p>video</p>
+        <p>passo a passo</p>
+
+        <section className={styles.bannerBlog}>
+          <div className={styles.bannerFraseContent}>
+            <div className={styles.linhaTexto}>
+            <div className={styles.frame}><h3>Organize sua estante,</h3></div> <Image src="/pilhaLivros.png" width={70} height={10} alt="estante" /> <div className={styles.frame}><h3>acompanhe suas</h3></div>
+            </div>
+            <div className={styles.linhaTexto}>
+            <div className={styles.frame}><h3>metas com precisão e pare de perder tempo com livros que não são para você. Nossas recomendações inteligentes </h3></div><Image src="/ia.png" width={40} height={20} alt="estante" />
+            </div>
+            <div className={styles.linhaTexto}>
+            <div className={styles.frame}><h3>e nossa curadoria de assinatura </h3></div><Image src="/metas.png" width={70} height={10} alt="meta" /><div className={styles.frame}><h3>garantem que sua próxima leitura seja sempre incrível.</h3> </div>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
