@@ -164,17 +164,7 @@
   --space: 8px;
 }
 
-
-
-
 /* font-size */
-:root{
-  --text-headline-1: 4vw;
-  --text-headline-2: 3vw;
-  --text-headline-3: 2vw;
-  --text-headline-4: 1vw;
-  --text-headline-5: 0.5vw;
-}
 
 /* escala cinza */
 :root{
@@ -210,8 +200,8 @@
   --font-body: var(--font-host-grotesk);
 
   --text-headline-1: 4vw;
-  --text-headline-2: 3vw;
-  --text-headline-3: 2vw;
+  --text-headline-2: clamp(1rem,calc(2vw + 1rem),4rem);
+  --text-headline-3: clamp(1rem,calc(1vw + 1rem),2rem);
   --text-headline-4: 1vw;
   --text-headline-5: 0.5vw;
 
@@ -287,12 +277,13 @@ h1{
 h2{
   font-family: var(--font-bricolage-grotesk);
   font-weight: 500;
-  font-size: var(--text-headline-3);
+  font-size: var(--text-headline-2);
 }
 
 h3{
   font-family: var(--font-instrument-serif);
   font-weight: 600;
+  font-size: var(--text-headline-3);
 }
 
 h4{

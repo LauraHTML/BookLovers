@@ -51,55 +51,48 @@
 /* carrossel */
 
 .carouselItem{
-    background-color: var(--brand-primary-700);
-    height: 20rem;
+    height: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
     padding: 2rem;
+    overflow: hidden;
 }
-
-.carouselItem h2{
-    font-family: var(--font-bricolage-grotesk);
-    font-weight: 500;
-    font-size: var(--text-headline-3);
+.carouselItem img{
+    width: 55vw;
+    height: 35vh;
+}
+  .carouselItemTexto{
+    display: block;   
 }
 
 .bannerBlogContent{
+    background-color: var(--brand-primary-700);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65vw;
-    height: 70vh;
-}
-
-.bannerBlogMarcador{
-    background-color: var(--color-accent-primary-400);
-    border: solid 3px var(--color-accent-primary-700);
-    color: var(--color-accent-primary-700);
-    border-radius: var(--l);
-    padding: 0.5rem;
-    font-family: var(--font-host-grotesk);
-    text-align: center;
+    width: 90vw;
+    height: auto;
+    gap: 1rem;
+    padding: var(--p-3);
 }
 
 .cartaoDestaqueBlog{
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: auto;
     min-width: 25vw;
     border-radius: 1rem;
     padding: 1rem;
-    background-image: url(/fundoCardBlog.png);
-    background-size: cover;
-    background-repeat: repeat;
+    
+    background-color: var(--color-background);
     color: var(--brand-primary-700);
 }
 
-.cartaoDestaqueBlog h3{
-    font-size: 2vw;
-    color: var(--brand-primary-700);
-}
 .cartaoDestaqueBlog small{
     color: var(--brand-primary-700);
 }
@@ -113,4 +106,17 @@
 .decricaoBlog{
     min-width: 20vw;
     padding: 1rem 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+
+    .carouselItem{
+    flex-direction: column;
+    gap: 0;
+}
+  .carouselItemTexto{
+    display: none;
+}
+
+
 }

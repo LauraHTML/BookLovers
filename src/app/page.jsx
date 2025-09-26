@@ -29,19 +29,19 @@ export default function Home() {
 
   const vantagens = [
     {
-      imagem:"/imgCarrossel.png", //0
+      imagem: "/imgCarrossel.png", //0
       title: "O que os autores não contam (mas nós sim)",
-      texto:"Uma espiada exclusiva nos bastidores da criação literária. Entrevistas, perfis e análises que revelam o processo criativo, as manias e os pensamentos dos seus autores favoritos."
+      texto: "Uma espiada exclusiva nos bastidores da criação literária. Entrevistas, perfis e análises que revelam o processo criativo, as manias e os pensamentos dos seus autores favoritos."
     },
     {
-      imagem:"/imgCarrossel.png",// 1
+      imagem: "/imgCarrossel.png",// 1
       title: "Escolhidos a dedo: encontre livros que vão marcar sua vida",
-      texto:" Mais do que simples resenhas, compartilhamos experiências. Aqui você encontra recomendações de livros com o poder de transformar, inspirar e ficar para sempre na sua memória."
+      texto: " Mais do que simples resenhas, compartilhamos experiências. Aqui você encontra recomendações de livros com o poder de transformar, inspirar e ficar para sempre na sua memória."
     },
     {
-      imagem:"/imgCarrossel.png",// 2
+      imagem: "/imgCarrossel.png",// 2
       title: "Sua dose semanal de inspiração, direto da estante para você",
-      texto:"Toda semana, um conteúdo novo para alimentar sua paixão. De listas de lançamentos a guias de leitura por gênero, nosso blog é a fonte de inspiração que sua rotina de leitor merece."
+      texto: "Toda semana, um conteúdo novo para alimentar sua paixão. De listas de lançamentos a guias de leitura por gênero, nosso blog é a fonte de inspiração que sua rotina de leitor merece."
     }
   ]
 
@@ -81,38 +81,35 @@ export default function Home() {
               align: "start",
             }}
             orientation="horizontal"
-            className="w-full max-w-"
+            className="w-full max-w-[95vw]"
           >
             <CarouselContent className="-mt-1">
-            {vantagens.map((item, index) => {
-              return (
-                <CarouselItem key={index} className="pt-1 md:basis-full">
+              {vantagens.map((item, index) => {
+                return (
+                  <CarouselItem key={index} className="pt-1 md:basis-full">
                     <div className={styles.carouselItem}>
-                      <div className="w-1/2">
+                      <div className="w-full">
                         <h2>{item.title}</h2>
-                        <p>{item.texto}</p> 
+                        <p className={styles.carouselItemTexto}>{item.texto}</p>
                       </div>
-                      <div className="w-1/2">
+                      <div className="w-full">
                         <Image src={item.imagem} width={550} height={250} alt="ola" />
-                      </div>           
+                      </div>
                     </div>
-                </CarouselItem>
-                 );
-               })}
+                  </CarouselItem>
+                );
+              })}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
         </section>
-        <section className={styles.bannerContent}>
+        <section className={styles.bannerBlogContent}>
           <div className="flex flex-col gap-2 items-center m-5">
-            <div className={styles.bannerBlogMarcador}>
-              <p>Nosso blog</p>
-            </div>
             <h1 className={styles.bannerContenth1}>
-            Folha de Rosto
+              Folha de Rosto
             </h1>
-            <small>Em busca de inspiração para a sua próxima leitura? Este é o seu espaço.</small>
+            <p>Em busca de inspiração para a sua próxima leitura? Este é o seu espaço.</p>
           </div>
           <div className="flex flex-col md:flex-row gap-3">
             <div className={styles.cartaoDestaqueBlog}>
@@ -121,19 +118,20 @@ export default function Home() {
                 <small>21</small>
               </div>
               <div className={styles.linha}></div>
-              <div className="text-center"> 
+              <div className="flex flex-col items-center text-center p-3">
+                <Image src="/quadriculado.png" width={150} height={150} alt="imagem teste"/>
                 <h3>O que os autores não contam (mas nós sim)</h3>
               </div>
               <div className={styles.linha}></div>
-              <div className="h-full">
+              <div className="">
                 <div className={styles.decricaoBlog}>
-                <p> Uma espiada exclusiva nos bastidores da criação literária. Entrevistas, perfis e análises que revelam o processo criativo, as manias e os pensamentos dos seus autores favoritos.</p>
-               </div>
-               <div className={styles.linha}></div>
-               <div className="flex h-15 w-full justify-center items-center">
-                <span className={styles.bannerContentSpan}>BookLovers</span>
-               </div>
-               </div>                            
+                  <p> Uma espiada exclusiva nos bastidores da criação literária. Entrevistas, perfis e análises que revelam o processo criativo, as manias e os pensamentos dos seus autores favoritos.</p>
+                </div>
+                <div className={styles.linha}></div>
+                <div className="flex h-15 w-full justify-center items-center">
+                  <span className={styles.bannerContentSpan}>BookLovers</span>
+                </div>
+              </div>
             </div>
 
             <div className={styles.cartaoDestaqueBlog}>
@@ -142,19 +140,20 @@ export default function Home() {
                 <small>21</small>
               </div>
               <div className={styles.linha}></div>
-              <div className="text-center"> 
+              <div className="flex flex-col items-center text-center p-3">
+                <Image src="/quadriculado.png" width={150} height={150} alt="imagem teste"/>
                 <h3>Escolhidos a dedo: encontre livros que vão marcar sua vida</h3>
               </div>
               <div className={styles.linha}></div>
-              <div className="h-full">
+              <div className="">
                 <div className={styles.decricaoBlog}>
-                <p>Mais do que simples resenhas, compartilhamos experiências. Aqui você encontra recomendações de livros com o poder de transformar, inspirar e ficar para sempre na sua memória.</p>
-               </div>
-               <div className={styles.linha}></div>
-               <div className="flex h-15 w-full justify-center items-center">
-                <span className={styles.bannerContentSpan}>BookLovers</span>
-               </div>
-               </div>                            
+                  <p>Mais do que simples resenhas, compartilhamos experiências. Aqui você encontra recomendações de livros com o poder de transformar, inspirar e ficar para sempre na sua memória.</p>
+                </div>
+                <div className={styles.linha}></div>
+                <div className="flex h-15 w-full justify-center items-center">
+                  <span className={styles.bannerContentSpan}>BookLovers</span>
+                </div>
+              </div>
             </div>
 
             <div className={styles.cartaoDestaqueBlog}>
@@ -163,30 +162,30 @@ export default function Home() {
                 <small>21</small>
               </div>
               <div className={styles.linha}></div>
-              <div className="text-center"> 
+              <div className="flex flex-col items-center text-center p-3">
+                <Image src="/quadriculado.png" width={150} height={150} alt="imagem teste"/>
                 <h3>Sua dose semanal de inspiração, direto da estante para você</h3>
               </div>
               <div className={styles.linha}></div>
-              <div className="h-full">
+              <div className="">
                 <div className={styles.decricaoBlog}>
-                <p>Toda semana, um conteúdo novo para alimentar sua paixão. De listas de lançamentos a guias de leitura por gênero, nosso blog é a fonte de inspiração que sua rotina de leitor merece.</p>
-               </div>
-               <div className={styles.linha}></div>
-               <div className="flex h-15 w-full justify-center items-center">
-                <span className={styles.bannerContentSpan}>BookLovers</span>
-               </div>
-               </div>                            
+                  <p>Toda semana, um conteúdo novo para alimentar sua paixão. De listas de lançamentos a guias de leitura por gênero, nosso blog é a fonte de inspiração que sua rotina de leitor merece.</p>
+                </div>
+                <div className={styles.linha}></div>
+                <div className="flex h-15 w-full justify-center items-center">
+                  <span className={styles.bannerContentSpan}>BookLovers</span>
+                </div>
+              </div>
             </div>
 
           </div>
-          <Button variant="default">Ir para blog</Button>
+          <Button variant="secondary">Ir para blog</Button>
         </section>
 
         <section className={styles.bannerFrase}>
           <h3 className={styles.bannerContenth2}>
-            Organize sua estante, acompanhe suas metas com precisão e pare de
-            perder tempo com livros que não são para você. Nossas recomendações
-            inteligentes e nossa curadoria de assinatura garantem que sua
+            Organize sua estante <Image src="/pilhaLivros.png" width={90} height={20} alt="estante" />, acompanhe suas metas com precisão e pare de
+            perder tempo com livros que não são para você. Nossas recomendações inteligentes <Image src="/ia.png" width={40} height={20} alt="estante" /> e nossa curadoria de assinatura <Image src="/metas.png" width={90} height={20} alt="estante" /> garantem que sua
             próxima leitura seja sempre incrível.
           </h3>
         </section>

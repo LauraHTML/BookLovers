@@ -12,13 +12,13 @@ const buttonVariants = cva(
         default:
           "font-primary text-foreground bg-primary p-(--p-1) hover:bg-primary/80",
         destructive:
-          "font-sans bg-destructive text-white p-(--p-1) shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "font-primary bg-destructive text-white p-(--p-1) shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outlinePrimary:
-          "font-sans border bg-background shadow-xs p-(--p-1) hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border-solid border rounded-sm border-primary",
+          "font-primary border bg-background shadow-xs p-(--p-1) hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border-solid border rounded-sm border-primary",
           outlineSecondary:
-          "font-sans border bg-background shadow-xs p-(--p-1) hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border-solid border rounded-sm border-secondary",
+          "font-primary border bg-background shadow-xs p-(--p-1) hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border-solid border rounded-sm border-secondary",
         secondary:
-          "font-sans bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 p-(--p-1)",
+          "font-primary bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 p-(--p-1)",
         ghost:
           "font-sans hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 p-(--p-1)",
         link: "font-sans text-primary underline-offset-4 hover:underline",
